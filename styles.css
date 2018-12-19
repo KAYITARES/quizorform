@@ -1,9 +1,70 @@
 
+
+
 h1{
     text-align:center;
     background-color: teal;
-    padding:5%;
+    padding:4%;
     font-size:48px;
-    font-family:fantasy;
     text-shadow: 4px 4px 4px aqua;
+    height:10%;
+}
+
+.container{
+    width:100%;
+    
+}
+.load{
+    animation: slide 5s;
+  }
+  .slider{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  width:100%;
+  height:600px;
+  animation: slide 20s infinite;
+  }
+  
+  @keyframes slide{
+    0%{
+      background-image:url("https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    }
+    20%{
+      background-image:url("https://images.pexels.com/photos/1638341/pexels-photo-1638341.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    }
+    20.01%{
+      background-image:url("https://images.pexels.com/photos/169191/pexels-photo-169191.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    }
+    40%{
+      background-image:url("https://images.pexels.com/photos/1230665/pexels-photo-1230665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+    40.01%{
+    background-image:url("https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    
+  }
+    60%{
+    background-image:url("https://images.pexels.com/photos/1449053/pexels-photo-1449053.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+    60.01%{
+  background-image:url("https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+    80%{
+    background-image:url("https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+    80.01%{
+    background-image:url("https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+    100%{
+    background-image:url("https://images.pexels.com/photos/240514/pexels-photo-240514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  
+}
+.panel-footer{
+    
+    margin-left: 18%;
+}
+.btn-info{
+    padding:10px;
+    width:100%;
 }
