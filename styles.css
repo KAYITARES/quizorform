@@ -4,4 +4,6 @@ h1{
     background-color: teal;
     padding:5%;
     font-size:48px;
+    font-family:fantasy;
+    text-shadow: 4px 4px 4px aqua;
 }
