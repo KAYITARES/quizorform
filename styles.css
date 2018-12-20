@@ -64,11 +64,16 @@ h1{
     
     margin-left: 18%;
 }
-.btn-info, .btn-danger{
+.btn-info{
+  
     padding:10px;
     width:200%;
 }
 .btn-danger{
-    width:60%;
-    
+  padding:10px;
+  width:60%;
+}
+.btn-success{
+  padding:10px;
+  width: 90%;
 }
