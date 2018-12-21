@@ -1,4 +1,5 @@
 
+  var count = 0;
 function check() {
     var questionsOne = document.quiz.questionOne.value;
     var questionsTwo = document.quiz.questionTwo.value;
@@ -15,7 +16,8 @@ function check() {
     var questionsThirteen = document.quiz.questionThirteen.value;
     var questionsFotheen = document.quiz.questionFotheen.value;
     var questionsFitheen = document.quiz.questionfitheen.value;
-    var count = 0;
+       
+  
     
     if (questionsOne == "3") {
         count += 1;
@@ -62,14 +64,17 @@ if (questionsEleven == "37") {
     if (questionsFitheen == "50") {
        count += 1;
 }
-document.getElementById("results").style.visibility = "visible";
+return count;
+}   
+$(document).ready(function() {
+    $("form").submit(function(){
+        check()
+        $("#button").hide();
+        $("#quiz").hide();
+        $("#numberCount").text("YOUR SCORE IS: " + count + "/15.")
+        $("#numberCount").show();
+        event.preventDefault();
+    })
 
-document.getElementById("numberCount").innerHTML = "YOUR SCORE IS: " + count + "/15.";
-    
 
-$("#button").hide();
-    $("#quiz").hide();
-    $("#numberCount").show();
-    event.preventDefault();
-
-};
+});
