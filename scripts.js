@@ -1,4 +1,4 @@
-
+//business logic
   var count = 0;
 function check() {
     var questionsOne = document.quiz.questionOne.value;
@@ -65,7 +65,8 @@ if (questionsEleven == "37") {
        count += 1;
 }
 return count;
-}   
+}  
+//user interface 
 $(document).ready(function() {
     $("form").submit(function(){
         check()

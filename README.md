@@ -2,7 +2,7 @@
 #### Quiz form is a website designed to test HTML and CSS learners, December 20th 2018
 #### By **KAYITARE cynthia.**
 ## Description
-Quiz form is a website that is designed to test HTML and CSS learners. The main objective is to test their progress in the  HTML and CSS lessons. The quiz have fiftheen(15) question and is markto /15.learner have to answer all question in order to get the results.
+Quiz form is a website that is designed to test HTML and CSS learners. The main objective is to test their progress in the  HTML and CSS lessons. The quiz have fiftheen(15) question and is markto /15.
 ## Setup/Installation Requirements
 * Open your computer or smart phone
 * Connect to internet

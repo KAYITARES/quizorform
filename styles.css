@@ -1,7 +1,7 @@
 
 
 
-
+/* heading1*/
 h1{
     text-align:center;
     background-color: teal;
@@ -65,6 +65,7 @@ h1{
     
     margin-left: 18%;
 }
+/*button css*/
 #button{
   background-color:green;
   padding:10%;
@@ -75,6 +76,7 @@ h1{
 #button:hover{
   background-color:red;
 }
+/*readmore css*/
 #readMore{
   background-color:green;
   padding:10%;
