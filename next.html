@@ -5,6 +5,9 @@
     <title>QUIZ FORM</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -32,63 +35,67 @@
                 <div class="col-md-8">
                     <div class="well">
                         <div class="radio">
-                            <ol>
-                                <li>
-                                    <h4>Which CSS property controls the text size?</h4>
-                                </li>
-                                <label>
-                                    <input type="radio" name="optradio">text-size</input><br>
-                                    <input type="radio" name="optradio">font-style </input><br>
-                                    <input type="radio" name="optradio"> font-size </input><br>
-                                    <input type="radio" name="optradio">text-style</input><br>
-                                </label>
-                                <li>
-                                    <h4>What is the correct CSS syntax for making all the <p> elements bold?</h4>
-                                </li>
-                                <label>
-                                    <input type="radio" name="optradio">&lt;p style="font-size:bold;">&lt;/p&gt;</input><br>
-                                    <input type="radio" name="optradio">&lt;p style="text-size:bold;"&gt;</style>
-                                    </input><br>
-                                    <input type="radio" name="optradio">p {text-size:bold;}</input><br>
-                                    <input type="radio" name="optradio">p {font-weight:bold;}</input>
-                                </label>
-                                <li>
-                                    <h4> How do you make each word in a text start with a capital letter?</h4>
-                                </li>
+                            <form name="quiz" id="quiz">
+                                <ol start="11">
+                                    <li>
+                                        <h4>Which CSS property controls the text size?</h4>
+                                    </li>
+                                    <label>
+                                        <input type="radio" name="questionEleven" value="35">text-size</input><br>
+                                        <input type="radio" name="questionEleven" value="36">font-style </input><br>
+                                        <input type="radio" name="questionEleven" value="37"> font-size </input><br>
+                                        <input type="radio" name="questionEleven" value="38">text-style</input><br>
+                                    </label>
+                                    <li>
+                                        <h4>What is the correct CSS syntax for making all the elements bold?</h4>
+                                    </li>
+                                    <label>
+                                        <input type="radio" name="questionTwelve" value="39">&lt;p
+                                        style="font-size:bold;">&lt;/p&gt;</input><br>
+                                        <input type="radio" name="questionTwelve" value="40">&lt;p
+                                        style="text-size:bold;"&gt;</style>
+                                        </input><br>
+                                        <input type="radio" name="questionTwelve" value="41">p {text-size:bold;}</input><br>
+                                        <input type="radio" name="questionTwelve" value="42">p {font-weight:bold;}</input>
+                                    </label>
+                                    <li>
+                                        <h4> How do you make each word in a text start with a capital letter?</h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio"> transform:capitalize</input><br>
-                                    <input type="radio" name="optradio"> You can't do that with CSS</input><br>
-                                    <input type="radio" name="optradio"> text-style:captialize
-                                    </input><br>
-                                    <input type="radio" name="optradio"> text-transform:capitalize
-                                    </input>
-                                </label>
-                                <li>
-                                    <h4> Which property is used to change the font of an element? </h4>
-                                </li>
+                                    <label>
+                                        <input type="radio" name="questionThirteen" value="43"> transform:capitalize</input><br>
+                                        <input type="radio" name="questionThirteen" value="44"> You can't do that with CSS</input><br>
+                                        <input type="radio" name="questionThirteen" value="45"> text-style:captialize
+                                        </input><br>
+                                        <input type="radio" name="questionThirteen" value="46"> text-transform:capitalize
+                                        </input>
+                                    </label>
+                                    <li>
+                                        <h4> Which property is used to change the font of an element? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio">font-style</input><br>
-                                    <input type="radio" name="optradio"> font-weight</input><br>
-                                    <input type="radio" name="optradio"> font-family
-                                    </input>
-                                </label>
-                                <li>
-                                    <h4>How do you make the text bold? </h4>
-                                </li>
+                                    <label>
+                                        <input type="radio" name="questionFotheen" value="47">font-style</input><br>
+                                        <input type="radio" name="questionFotheen" value="48"> font-weight</input><br>
+                                        <input type="radio" name="questionFotheen" value="49"> font-family
+                                        </input>
+                                    </label>
+                                    <li>
+                                        <h4>How do you make the text bold? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio">font-weight:bold;
-                                    </input><br>
-                                    <input type="radio" name="optradio">font:bold;</input><br>
-                                    <input type="radio" name="optradio">style:bold;</input><br>
-                                    <button class="btn-success">SUBMIT</button>
-                                </label>
+                                    <label>
+                                        <input type="radio" name="questionfitheen" value="50">font-weight:bold;
+                                        </input><br>
+                                        <input type="radio" name="questionfitheen" value="51">font:bold;</input><br>
+                                        <input type="radio" name="questionfitheen" value="52">style:bold;</input><br><br><br>
+                                        <button class="btn-success">SUBMIT</button>
+                                    </label>
 
 
 
-                            </ol>
+                                </ol>
+                            </form>
                         </div>
 
 

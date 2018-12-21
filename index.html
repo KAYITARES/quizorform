@@ -5,6 +5,11 @@
     <title>QUIZ FORM</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
@@ -31,117 +36,189 @@
                 </div>
                 <div class="col-md-8">
                     <div class="well">
+                        
                         <div class="radio">
-                            <ol>
-                                <li>
-                                    <h4>whtat does CSS stand for</h4>
-                                </li>
-                                <label>
-                                    <input type="radio" name="optradio">Colorful Style Sheets</input><br>
-                                    <input type="radio" name="optradio"> Creative Style Sheets</input><br>
-                                    <input type="radio" name="optradio"> Cascading Style Sheets</input><br>
-                                    <input type="radio" name="optradio">Computer Style Sheets</input><br>
-                                </label>
-                                <li>
-                                    <h4>What is the correct HTML for referring to an external style sheet?</h4>
-                                </li>
-                                <label>
-                                    <input type="radio" name="optradio">&lt;link rel="stylesheet" type="text/css"
-                                    href="mystyle.css"&gt;</input><br>
-                                    <input type="radio" name="optradio">&lt;style src="mystyle.css"&gt;</style> </input><br>
-                                    <input type="radio" name="optradio"> &lt;Stylesheet>mystyle.css &lt;/stylesheet
-                                    &gt;</input>
-                                </label>
-                                <li>
-                                    <h4> Where in an HTML document is the correct place to refer to an external style
-                                        sheet?</h4>
-                                </li>
+                            <form name="quiz" id="quiz">
+                                <ol>
+                                    <li>
+                                        <h4>whtat does CSS stand for</h4>
+                                    </li>
+                                    <label>
+                                        <input type="radio" name="questionOne" value="1">Colorful Style Sheets<br>
+                                        <input type="radio" name="questionOne" value="2"> Creative Style Sheets<br>
+                                        <input type="radio" name="questionOne" value="3"> Cascading Style Sheets<br>
+                                        <input type="radio" name="questionOne" value="4">Computer Style Sheets<br>
+                                    </label>
+                                    <li>
+                                        <h4>What is the correct HTML for referring to an external style sheet?</h4>
+                                    </li>
+                                    <label>
+                                        <input type="radio" name="questionTwo" value="5">&lt;link rel="stylesheet"
+                                        type="text/css"
+                                        href="mystyle.css"&gt;</input><br>
+                                        <input type="radio" name="questionTwo" value="6">&lt;style src="mystyle.css"&gt;</style>
+                                        </input><br>
+                                        <input type="radio" name="questionTwo" value="7"> &lt;Stylesheet>mystyle.css
+                                        &lt;/stylesheet
+                                        &gt;</input>
+                                    </label>
+                                    <li>
+                                        <h4> Where in an HTML document is the correct place to refer to an external
+                                            style
+                                            sheet?</h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio">In the&lt;head&gt; section</input><br>
-                                    <input type="radio" name="optradio">At the end of the document </input><br>
-                                    <input type="radio" name="optradio"> In the &lt;body&gt; section
-                                    </input>
-                                </label>
-                                <li>
-                                    <h4> Which HTML tag is used to define an internal style sheet? </h4>
-                                </li>
+                                    <label>
+                                        <input type="radio" name="questionThree" value="8">In the&lt;head&gt; section<br>
+                                        <input type="radio" name="questionThree" value="9">At the end of the document
+                                        <br>
+                                        <input type="radio" name="questionThree" value="10"> In the &lt;body&gt; section
+                                    
+                                    </label>
+                                    <li>
+                                        <h4> Which HTML tag is used to define an internal style sheet? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio">&lt;style&gt;</input><br>
-                                    <input type="radio" name="optradio">&lt;script&gt;</input><br>
-                                    <input type="radio" name="optradio">&lt;body&gt;
-                                    </input>
-                                </label>
-                                <li>
-                                    <h4> Which HTML attribute is used to define inline styles? </h4>
-                                </li>
+                                    <label>
+                                        <input type="radio" name="questionFour" value="11">&lt;style&gt;<br>
+                                        <input type="radio" name="questionFour" value="12">&lt;script&gt;<br>
+                                        <input type="radio" name="questionFour" value="13">&lt;body&gt;
+                                        
+                                    </label>
+                                    <li>
+                                        <h4> Which HTML attribute is used to define inline styles? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio">class</input><br>
-                                    <input type="radio" name="optradio">style</input><br>
-                                    <input type="radio" name="optradio">styles</input><br>
-                                    <input type="radio" name="optradio">font</input><br><br>
-                                </label>
+                                    <label>
+                                        <input type="radio" name="questionFive" value="14">class<br>
+                                        <input type="radio" name="questionFive" value="15">style<br>
+                                        <input type="radio" name="questionFive" value="16">styles<br>
+                                        <input type="radio" name="questionFive" value="17">font<br><br>
+                                    </label>
 
-                                <li>
-                                    <h4> Which is the correct CSS syntax? </h4>
-                                </li>
+                                    <li>
+                                        <h4> Which is the correct CSS syntax? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio">body {color: black;}</input><br>
-                                    <input type="radio" name="optradio">body:color=black;</input><br>
-                                    <input type="radio" name="quiz">
-                                    {body;color:black;}</input><br>
-                                    <input type="radio" name="optradio">{body:color=black;}</input><br><br>
+                                    <label>
+                                        <input type="radio" name="questionSix" value="18">body {color: black;}<br>
+                                        <input type="radio" name="questionSix" value="19">body:color=black;<br>
+                                        <input type="radio" name="questionSix" value="20">
+                                        {body;color:black;}</input><br>
+                                        <input type="radio" name="questionSix" value="21">{body:color=black;}<br><br>
 
-                                </label>
-                                <li>
-                                    <h4> How do you insert a comment in a CSS file? </h4>
-                                </li>
+                                    </label>
+                                    <li>
+                                        <h4> How do you insert a comment in a CSS file? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio"> // this is a comment</input><br>
-                                    <input type="radio" name="optradio"> ' this is a comment</input><br>
-                                    <input type="radio" name="optradio">// this is a comment //</input><br>
-                                    <input type="radio" name="optradio"> /* this is a comment */</input><br><br>
-                                </label>
-                                <li>
-                                    <h4> Which property is used to change the background color? </h4>
-                                </li>
+                                    <label>
+                                        <input type="radio" name="questionSeven" value="22"> // this is a comment<br>
+                                        <input type="radio" name="questionSeven" value="23"> ' this is a comment<br>
+                                        <input type="radio" name="questionSeven" value="24">// this is a comment //<br>
+                                        <input type="radio" name="questionSeven" value="25"> /* this is a comment */<br><br>
+                                    </label>
+                                    <li>
+                                        <h4> Which property is used to change the background color? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio">bgcolor </input><br>
-                                    <input type="radio" name="optradio"> color </input><br>
-                                    <input type="radio" name="optradio"> background-color</input><br>
+                                    <label>
+                                        <input type="radio" name="questionEight" value="26">bgcolor<br>
+                                        <input type="radio" name="questionEight" value="27"> color<br>
+                                        <input type="radio" name="questionEight" value="28"> background-color<br>
 
-                                </label>
-                                <li>
-                                    <h4> How do you add a background color for all elements? </h4>
-                                </li>
+                                    </label>
+                                    <li>
+                                        <h4> How do you add a background color for all &lt;h1&gt;elements? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio">h1 {background-color:#FFFFFF;} </input><br>
-                                    <input type="radio" name="optradio"> h1.all {background-color:#FFFFFF;} </input><br>
-                                    <input type="radio" name="optradio">all.h1 {background-color:#FFFFFF;} </input><br>
-                                </label>
-                                <li>
-                                    <h4> Which CSS property is used to change the text color of an element? </h4>
-                                </li>
+                                    <label>
+                                        <input type="radio" name="questionNine" value="29">h1 {background-color:#FFFFFF;}
+                                        <br>
+                                        <input type="radio" name="questionNine" value="30"> h1.all
+                                        {background-color:#FFFFFF;}
+                                        <br>
+                                        <input type="radio" name="questionNine" value="31">all.h1
+                                        {background-color:#FFFFFF;}
+                                        <br>
+                                    </label>
+                                    <li>
+                                        <h4> Which CSS property is used to change the text color of an element? </h4>
+                                    </li>
 
-                                <label>
-                                    <input type="radio" name="optradio"> text-color </input><br>
-                                    <input type="radio" name="optradio"> fgcolor </input><br>
-                                    <input type="radio" name="optradio"> color </input><br><br>
-                                    <a href="next.html"> <button class="btn-info">Next</button></a>
-                                </label>
+                                    <label>
+                                        <input type="radio" name="questionTen" value="32"> text-color<br>
+                                        <input type="radio" name="questionTen" value="33"> fgcolor<br>
+                                        <input type="radio" name="questionTen" value="34"> color<br><br>
 
-                            </ol>
+                                    </label>
+
+                                    <li>
+                                        <h4>Which CSS property controls the text size?</h4>
+                                    </li>
+                                    <label>
+                                        <input type="radio" name="questionEleven" value="35">text-size<br>
+                                        <input type="radio" name="questionEleven" value="36">font-style<br>
+                                        <input type="radio" name="questionEleven" value="37"> font-size<br>
+                                        <input type="radio" name="questionEleven" value="38">text-style<br>
+                                    </label>
+                                    <li>
+                                        <h4>What is the correct CSS syntax for making all &lt;p&gt; the elements bold?</h4>
+                                    </li>
+                                    <label>
+                                        <input type="radio" name="questionTwelve" value="39">&lt;p
+                                        style="font-size:bold;">&lt;/p&gt;<br>
+                                        <input type="radio" name="questionTwelve" value="40">&lt;p
+                                        style="text-size:bold;"&gt;</style>
+                                        <br>
+                                        <input type="radio" name="questionTwelve" value="41">p {text-size:bold;}<br>
+                                        <input type="radio" name="questionTwelve" value="42">p {font-weight:bold;}
+                                    </label>
+                                    <li>
+                                        <h4> How do you make each word in a text start with a capital letter?</h4>
+                                    </li>
+
+                                    <label>
+                                        <input type="radio" name="questionThirteen" value="43"> transform:capitalize<br>
+                                        <input type="radio" name="questionThirteen" value="44"> You can't do that with CSS<br>
+                                        <input type="radio" name="questionThirteen" value="45"> text-style:captialize
+                                        <br>
+                                        <input type="radio" name="questionThirteen" value="46"> text-transform:capitalize
+                                        
+                                    </label>
+                                    <li>
+                                        <h4> Which property is used to change the font of an element? </h4>
+                                    </li>
+
+                                    <label>
+                                        <input type="radio" name="questionFotheen" value="47">font-style<br>
+                                        <input type="radio" name="questionFotheen" value="48"> font-weight<br>
+                                        <input type="radio" name="questionFotheen" value="49"> font-family
+                                        
+                                    </label>
+                                    <li>
+                                        <h4>How do you make the text bold? </h4>
+                                    </li>
+
+                                    <label>
+                                        <input type="radio" name="questionfitheen" value="50">font-weight:bold;
+                                        </input><br>
+                                        <input type="radio" name="questionfitheen" value="51">font:bold;<br>
+                                        <input type="radio" name="questionfitheen" value="52">style:bold;<br><br><br>
+                                        <button class="btn-success" id="button" type="submit" onclick="check()">SUBMIT</button>
+                                    </label>
+
+
+
+                                </ol>
+                            </form>
                         </div>
-
-
+                        <div id="results">
+                            <h2 id="numberCount"></h2>
+                        </div>
                     </div>
-                    <p>we have to answer 25 Questions</p>
+               
+                    <p>we have to answer 15 Questions</p>
 
                 </div>
                 <div class="col-md-2">
@@ -160,7 +237,8 @@
                             <li><a href="https://www.w3schools.com/cert/cert_bootstrap.asp">Bootscrap</a></li>
                             <li><a href="https://www.w3schools.com/cert/cert_xml.asp">XML</a></li>
                         </ul>
-                        <a href="https://www.w3schools.com/cert/default.asp"><button class="btn-danger">Read More</button></a>
+                        <a href="https://www.w3schools.com/cert/default.asp"><button class="btn-danger">Read
+                                More</button></a>
                     </div>
                 </div>
 
