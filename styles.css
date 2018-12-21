@@ -65,18 +65,25 @@ h1{
     
     margin-left: 18%;
 }
-.btn-info{
-  
-    padding:10px;
-    width:200%;
+#button{
+  background-color:green;
+  padding:10%;
+  width:110%;
+  color:white;
+  font-size:24px;
 }
-.btn-danger{
-  padding:10px;
-  width:60%;
+#button:hover{
+  background-color:red;
 }
-.btn-success{
-  padding:10px;
-  width: 90%;
+#readMore{
+  background-color:green;
+  padding:10%;
+  width:100%;
+  color:white;
+  font-size:24px;
+}
+#readMore:hover{
+  background-color:red;
 }
 #numberCount{
   display:none;
