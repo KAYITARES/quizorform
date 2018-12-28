@@ -72,7 +72,7 @@ $(document).ready(function() {
         check()
         $("#button").hide();
         $("#quiz").hide();
-        $("#numberCount").text("YOUR SCORE IS: " + count + "/15.")
+        $("#numberCount").text("YOUR SCORE IS: " + count + "/30.")
         $("#numberCount").show();
         event.preventDefault();
     })
